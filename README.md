@@ -174,3 +174,314 @@ HTML ---------
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+log in basico  --- numero 2 
+
+
+
+HTML ------- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <title>Sign up</title>
+</head>
+<body>
+    
+    <header>
+<h2 class="logo">Logo</h2>
+<nav class="navegation">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <button class="btnLoging-popup">Login</button>
+</nav>
+    </header>
+    
+<div class="container">
+    <span class="icone-close"><box-icon name='x-circle' animation='tada' color='#9bc8eb' ></box-icon></span>
+
+    <div class="form-box  login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><box-icon name='envelope' animation='burst' color='#9bc8eb' ></box-icon></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><box-icon name='lock' type='solid' animation='burst' color='#9bc8eb' ></box-icon></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remeber-forgot">
+                <label><input type="checkbox">Remeber me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+                <p>Don't have an account yet? <a href="signup.html" class="register-link"> Register</a> </p>
+            </div>
+        </form>
+    </div>
+
+    
+</div>
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="log.css"></script>
+</body>
+</html>
+
+
+
+
+
+HTML 2 ------------------------ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+    
+        <div class="form-box  login">
+            <h2>Register</h2>
+            <form action="#">
+
+                <div class="input-box">
+                    <span class="icon"><box-icon name='user-circle' color='#9bc8eb' type='solid' animation='burst' ></box-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><box-icon name='envelope' animation='burst' color='#9bc8eb' ></box-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><box-icon name='lock' type='solid' animation='burst' color='#9bc8eb' ></box-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                    <div class="input-box">
+                        <span class="icon"><box-icon name='lock' type='solid' animation='burst' color='#9bc8eb' ></box-icon></span>
+                        <input type="password" required>
+                        <label>Confirm password</label>
+                    </div>
+                </div>
+                <div class="remeber-forgot">
+                    <label><input type="checkbox">Agree to terms and conditions.</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="loging.html" class="register-link"> Login</a> </p>
+                </div>
+            </form>
+        </div>
+    
+        
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+CSS---------------
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url(cyberpunk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+p{
+    display: flex;
+    justify-content: center;
+}
+
+.form-box{
+border: 2px solid rgba(255,255,2550.5);
+position: relative;
+width: 400px;
+height: 550px;
+border-radius: 20px;
+backdrop-filter: blur(5px);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.form-box h2{
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-box .input-box{
+position: relative;
+margin: 30px;
+width: 310px;
+border-bottom: 1px solid #eff;
+}
+
+
+.form-box .input-box input{
+width: 100%;
+height: 45px;
+background: transparent;
+border: none;
+outline: none;
+padding: 0 20px 0 5px;
+color: #fff;
+font-size: 14px;
+}
+
+i{
+    position: absolute;
+    color:rgb(255, 255, 255);
+    top: 13px;
+    right: 0;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+.btn{
+    color: #fff;
+    background: rgb(196, 32, 32);
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 3px 0 10px rgb(116, 38, 38);
+}
+
+.group{
+display: flex;
+justify-content: space-between;
+}
+
+.group span a {
+    color: #eff;
+    position: relative;
+    top: 10px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.group a:focus{
+    text-decoration: underline;
+}
+
+#result{
+color: rgb(255, 6, 6);
+font-weight: 600;
+position: relative;
+top: 25px;
+}
+
+
+
+
+
+.popup{
+    width: 400px; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+     position: absolute;
+    top: 0;
+    left: 50%;
+     transform: translate(-50, 50%) scale(0);
+     transition: transform .4s , top .4s;
+     visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    height: 330px;
+    color: rgb(11, 155, 83);
+    border: 1px green solid;
+    border: solid 1px rgb(190, 189, 189);
+    
+}
+
+.popup ion-icon {
+  color: hsl(120, 100%, 50%);  
+  font-size: 45px;
+}
+
+.popup button{
+    width: 100%;
+background-color: #d11818a9;
+padding: 10px 0;
+margin-top: 50px;
+border: none;
+outline: none;
+font-size: 18px;
+color: #fff;
+border-radius: 4px;
+cursor: pointer;
+box-shadow: 0 0 2px rgba(0,0,0.1)
+}
+
+.popup a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.open-slide{
+top: 50%;
+transform: translate(-50%, -50%) scale(1);
+visibility: visible;
+}
+
+
